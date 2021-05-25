@@ -130,12 +130,12 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: white;
+  color: var(--primary-violet);
   width: 200px;
   height: 50px;
   font-size: large;
   border-radius: 50px;
-  background-color: var(--primary-soft-magente);
+  background-color: white;
   border: none;
   margin-top: 50px;
   cursor: pointer;
@@ -144,10 +144,8 @@ button {
 button:hover {
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-  -webkit-transition: -webkit-box-shadow 0.2s;
-  transition: -webkit-box-shadow 0.2s;
-  transition: box-shadow 0.2s;
-  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  background-color: var(--primary-soft-magente);
+  color: white;
 }
 
 @media only screen and (max-width: 800px) {
@@ -221,8 +219,6 @@ button:hover {
     margin-bottom: 50px;
     width: 150px;
     height: 40px;
-    background-color: white;
-    color: var(--primary-violet);
   }
 }
 /*# sourceMappingURL=index.css.map */
