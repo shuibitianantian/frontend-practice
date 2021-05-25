@@ -1,0 +1,165 @@
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  text-justify: inter-word;
+}
+
+.flex-center, .flex-column-center, #container, #cards-sub-container, .flex-row-center, #cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-column-center, #container, #cards-sub-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-row-center, #cards-container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#container {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 10px;
+  max-width: 1280px;
+  background-color: aliceblue;
+  padding-bottom: 50px;
+}
+
+#container > div {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#container > div:nth-child(1) {
+  font-size: x-large;
+  font-weight: 200;
+  margin-top: 50px;
+  padding-bottom: 5px;
+}
+
+#container > div:nth-child(2) {
+  font-size: x-large;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #4c4e61;
+}
+
+#container > div:nth-child(3) {
+  font-size: small;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+  max-width: 400px;
+}
+
+.card, #cards-container > div:nth-child(odd), #cards-sub-container div:nth-child(1), #cards-sub-container div:nth-child(2) {
+  margin: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+  width: 300px;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card p, #cards-container > div:nth-child(odd) p, #cards-sub-container div:nth-child(1) p, #cards-sub-container div:nth-child(2) p {
+  width: 250px;
+  color: #a3a5ae;
+}
+
+.card p:nth-child(1), #cards-container > div:nth-child(odd) p:nth-child(1), #cards-sub-container div:nth-child(1) p:nth-child(1), #cards-sub-container div:nth-child(2) p:nth-child(1) {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: x-large;
+  font-weight: 600;
+  color: #4c4e61;
+}
+
+.card p:nth-child(2), #cards-container > div:nth-child(odd) p:nth-child(2), #cards-sub-container div:nth-child(1) p:nth-child(2), #cards-sub-container div:nth-child(2) p:nth-child(2) {
+  margin-top: 10px;
+  font-size: small;
+  font-weight: 200;
+}
+
+.card > div, #cards-container > div:nth-child(odd) > div, #cards-sub-container div:nth-child(1) > div, #cards-sub-container div:nth-child(2) > div {
+  width: 280px;
+}
+
+.card img, #cards-container > div:nth-child(odd) img, #cards-sub-container div:nth-child(1) img, #cards-sub-container div:nth-child(2) img {
+  width: 60px;
+  margin-bottom: 20px;
+  float: right;
+}
+
+#cards-container > div:nth-child(odd) {
+  border-top: 5px solid #45d3d3;
+}
+
+#cards-container > div:nth-child(3) {
+  border-top: 5px solid #549ef2;
+}
+
+#cards-sub-container div:nth-child(1) {
+  border-top: 5px solid #ea5353;
+}
+
+#cards-sub-container div:nth-child(2) {
+  border-top: 5px solid #fcaf4a;
+}
+
+@media only screen and (max-width: 375px) {
+  #cards-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card, #cards-container > div:nth-child(odd), #cards-sub-container div:nth-child(1), #cards-sub-container div:nth-child(2) {
+    width: 70vw;
+  }
+  .card p, #cards-container > div:nth-child(odd) p, #cards-sub-container div:nth-child(1) p, #cards-sub-container div:nth-child(2) p {
+    width: 70vw;
+    color: #a3a5ae;
+  }
+  .card p:nth-child(1), #cards-container > div:nth-child(odd) p:nth-child(1), #cards-sub-container div:nth-child(1) p:nth-child(1), #cards-sub-container div:nth-child(2) p:nth-child(1) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 5vw;
+    font-weight: 600;
+    color: #4c4e61;
+  }
+  .card p:nth-child(2), #cards-container > div:nth-child(odd) p:nth-child(2), #cards-sub-container div:nth-child(1) p:nth-child(2), #cards-sub-container div:nth-child(2) p:nth-child(2) {
+    margin-top: 10px;
+    font-size: small;
+    font-weight: 200;
+  }
+  .card > div, #cards-container > div:nth-child(odd) > div, #cards-sub-container div:nth-child(1) > div, #cards-sub-container div:nth-child(2) > div {
+    width: 70vw;
+  }
+  .card img, #cards-container > div:nth-child(odd) img, #cards-sub-container div:nth-child(1) img, #cards-sub-container div:nth-child(2) img {
+    width: 10vw;
+    margin-bottom: 20px;
+    float: right;
+  }
+}
+/*# sourceMappingURL=index.css.map */
