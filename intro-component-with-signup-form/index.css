@@ -143,6 +143,8 @@ body {
   background-color: white;
   border-radius: 10px;
   margin-top: 20px;
+  -webkit-box-shadow: 0 6px 2px -2px rgba(128, 128, 128, 0.7);
+          box-shadow: 0 6px 2px -2px rgba(128, 128, 128, 0.7);
 }
 
 #container-right > div:nth-child(2) button {
@@ -241,5 +243,81 @@ body {
 
 footer {
   top: 120px;
+}
+
+@media only screen and (max-width: 500px) {
+  #container {
+    width: 375px;
+    height: 90vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #container-left {
+    width: 320px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  #container-left p:nth-child(1) {
+    font-size: xx-large;
+    font-weight: 600;
+    margin: 0px;
+    line-height: 40px;
+  }
+  #container-left p:nth-child(2) {
+    font-size: small;
+    margin-top: 20px;
+    word-spacing: 2px;
+  }
+  .input-item {
+    margin: 35px;
+  }
+  .input-item input {
+    width: 250px;
+  }
+  .input-item p {
+    left: -10px;
+    top: 25px;
+  }
+  .input-item img {
+    left: 100px;
+    top: 0;
+  }
+  #container-right > div:nth-child(1) {
+    height: 80px;
+    width: 300px;
+    font-size: small;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 2px 5px var(--accent-blue);
+            box-shadow: 0px 2px 5px var(--accent-blue);
+  }
+  #container-right > div:nth-child(1) span {
+    font-weight: 700;
+  }
+  #container-right > div:nth-child(2) {
+    padding: 0px;
+    padding-bottom: 20px;
+    width: 300px;
+    -webkit-box-shadow: 0 6px 2px -2px rgba(128, 128, 128, 0.7);
+            box-shadow: 0 6px 2px -2px rgba(128, 128, 128, 0.7);
+  }
+  #container-right > div:nth-child(2) button {
+    width: 280px;
+  }
+  #container-right > div:nth-child(2) div:nth-child(6) {
+    display: inline-block;
+    width: 250px;
+    padding-top: 10px;
+    line-height: 20px;
+  }
+  #container-right > div:nth-child(2) div:nth-child(6) > span {
+    color: var(--primary-red);
+  }
 }
 /*# sourceMappingURL=index.css.map */

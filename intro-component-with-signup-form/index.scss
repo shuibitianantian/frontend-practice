@@ -92,6 +92,7 @@ body {
     background-color: white;
     border-radius: 10px;
     margin-top: 20px;
+    box-shadow: 0 6px 2px -2px hsla(0, 0%, 50%, 0.7);
 
     button {
       display: flex;
@@ -176,4 +177,86 @@ body {
 footer {
   @extend .centered;
   top: 120px;
+}
+
+@media only screen and (max-width: 500px) {
+  #container {
+    width: 375px;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #container-left {
+    width: 320px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    p:nth-child(1) {
+      font-size: xx-large;
+      font-weight: 600;
+      margin: 0px;
+      line-height: 40px;
+    }
+
+    p:nth-child(2) {
+      font-size: small;
+      margin-top: 20px;
+      word-spacing: 2px;
+    }
+  }
+
+  .input-item {
+    margin: 35px;
+    input {
+      width: 250px;
+    }
+
+    p {
+      left: -10px;
+      top: 25px;
+    }
+
+    img {
+      left: 100px;
+      top: 0;
+    }
+  }
+
+  #container-right {
+    & > div:nth-child(1) {
+      height: 80px;
+      width: 300px;
+
+      font-size: small;
+      border-radius: 10px;
+      box-shadow: 0px 2px 5px var(--accent-blue);
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    & > div:nth-child(2) {
+      padding: 0px;
+      padding-bottom: 20px;
+      width: 300px;
+      box-shadow: 0 6px 2px -2px hsla(0, 0%, 50%, 0.7);
+      button {
+        width: 280px;
+      }
+
+      div:nth-child(6) {
+        display: inline-block;
+        width: 250px;
+        padding-top: 10px;
+        line-height: 20px;
+        & > span {
+          color: var(--primary-red);
+        }
+      }
+    }
+  }
 }
