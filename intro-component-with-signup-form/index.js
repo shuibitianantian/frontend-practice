@@ -6,11 +6,11 @@ const subscribeButton = document.getElementById("subscribe");
 
 const deconstructingInputItem = (element) => {
     return {
-        name: element.getAttribute("name"),
-        inputElement: element.querySelector("input"),
-        errorImg : element.querySelector("img"),
-        errorMsg : element.querySelector("p")
-    }
+      name: element.getAttribute("name"),
+      inputElement: element.querySelector("input"),
+      errorImg: element.querySelector("img"),
+      errorMsg: element.querySelector("p"),
+    };
 }
 
 // function to validate all the input fields
