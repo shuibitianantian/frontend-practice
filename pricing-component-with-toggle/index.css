@@ -1,0 +1,304 @@
+:root {
+  --neutral-very-light-grayish-blue: hsl(240, 78%, 98%);
+  --neutral-light-grayish-blue: hsl(234, 14%, 74%);
+  --neutral-grayish-blue: hsl(233, 13%, 49%);
+  --neutral-dark-grayish-blue: hsl(232, 13%, 33%);
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 95vh;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1440px;
+  height: 850px;
+  background-color: var(--neutral-very-light-grayish-blue);
+}
+
+#container > img {
+  position: absolute;
+}
+
+#container > img:nth-child(1) {
+  right: 0;
+  top: 0;
+}
+
+#container > img:nth-child(2) {
+  left: 0;
+  bottom: 0;
+}
+
+#container #container-header-1 {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  font-size: x-large;
+  color: var(--neutral-dark-grayish-blue);
+}
+
+#container #container-header-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 40px;
+  width: 200px;
+  color: var(--neutral-light-grayish-blue);
+  font-size: small;
+}
+
+#container #container-header-2 label {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 25px;
+  width: 40px;
+  border-radius: 15px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(#a3a8f0, #696fdd);
+  cursor: pointer;
+}
+
+#container #container-header-2 label > span {
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+#container #container-header-2 input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+#container #container-header-2 input:checked + label > span {
+  left: 18px;
+}
+
+#container #container-header-2 input:checked ~ #container-body > .price-card .monthly, #container #container-header-2 input:checked ~ #container-body > .price-card-primary .monthly, #container #container-header-2 input:checked ~ #container-body > .price-card-secondary .monthly {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#container #container-header-2 input:checked ~ #container-body > .price-card .annually, #container #container-header-2 input:checked ~ #container-body > .price-card-primary .annually, #container #container-header-2 input:checked ~ #container-body > .price-card-secondary .annually {
+  display: none;
+}
+
+.row-centered, .price-card > div:nth-child(2) > p, .price-card-primary > div:nth-child(2) > p, .price-card-secondary > div:nth-child(2) > p {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container-body {
+  position: absolute;
+  top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price-card, .price-card-primary, .price-card-secondary {
+  width: 300px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  padding-top: 30px;
+  font-size: medium;
+}
+
+.price-card > div, .price-card-primary > div, .price-card-secondary > div {
+  width: 250px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.price-card > div:nth-child(2), .price-card-primary > div:nth-child(2), .price-card-secondary > div:nth-child(2) {
+  color: var(--neutral-dark-grayish-blue);
+  font-size: xxx-large;
+}
+
+.price-card > div:nth-child(2) > p, .price-card-primary > div:nth-child(2) > p, .price-card-secondary > div:nth-child(2) > p {
+  margin: 0px;
+}
+
+.price-card > div:nth-child(2) > p span, .price-card-primary > div:nth-child(2) > p span, .price-card-secondary > div:nth-child(2) > p span {
+  font-size: x-large;
+  margin-right: 5px;
+}
+
+.price-card > div:nth-child(2) .monthly, .price-card-primary > div:nth-child(2) .monthly, .price-card-secondary > div:nth-child(2) .monthly {
+  display: none;
+}
+
+.price-card > div:nth-child(2) .annually, .price-card-primary > div:nth-child(2) .annually, .price-card-secondary > div:nth-child(2) .annually {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.price-card > div:nth-child(n + 2):nth-child(-n + 5), .price-card-primary > div:nth-child(n + 2):nth-child(-n + 5), .price-card-secondary > div:nth-child(n + 2):nth-child(-n + 5) {
+  border-bottom: 1px solid var(--neutral-light-grayish-blue);
+}
+
+.price-card > div:nth-child(n + 3):nth-child(-n + 6), .price-card-primary > div:nth-child(n + 3):nth-child(-n + 6), .price-card-secondary > div:nth-child(n + 3):nth-child(-n + 6) {
+  font-size: small;
+}
+
+.price-card > div:nth-child(n+6), .price-card-primary > div:nth-child(n+6), .price-card-secondary > div:nth-child(n+6) {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.price-card-primary {
+  padding-top: 42px;
+  border-radius: 10px;
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(#a3a8f0, #696fdd);
+  height: 360px;
+}
+
+.price-card-primary > div:nth-child(n+2) {
+  color: white;
+}
+
+.price-card-primary > div:nth-child(n+6) {
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 5px;
+  color: #696fdd;
+  cursor: pointer;
+}
+
+.price-card-primary > div:nth-child(n+6):hover {
+  background: #696fdd;
+  border: 2px solid white;
+  color: white;
+}
+
+.price-card-secondary > div:nth-child(n+6) {
+  margin-top: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(#a3a8f0, #696fdd);
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.price-card-secondary > div:nth-child(n+6):hover {
+  background: white;
+  border: 2px solid #696fdd;
+  color: #696fdd;
+}
+
+.left-border-round {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.right-border-round {
+  border-radius: 0px 10px 10px 0px;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #container {
+    width: 375px;
+    height: 1750px;
+  }
+  #container > img {
+    width: 200px;
+  }
+  #container-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .price-card, .price-card-primary, .price-card-secondary {
+    margin-top: 50px;
+    border-radius: 10px;
+  }
+  .price-card > div, .price-card-primary > div, .price-card-secondary > div {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .price-card-primary, .price-card-secondary {
+    height: 400px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
