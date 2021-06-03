@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Job Listings</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header></header>
+    <div class="center-div">
+      <div id="filter-bar">
+        <div id="filter-rules"></div>
+        <button id="clear-btn">Clear</button>
+      </div>
+      <div class="job-card">
+        <div class="job-card-header">
+          <img class="job-card-header-img" src="./images/photosnap.svg" alt="photosnap">
+          <div class="job-card-header-details">
+            <div class="flex-row">
+              <p class="company-title">Photosnap</p>
+              <p class="new">new!</p>
+              <p class="featured">Featured</p>
+            </div>
+            <p class="job-title">Senior Frontend Developer</p>
+            <div class="flex-row light">
+              <p>1d ago</p>
+              <p>Full Time</p>
+              <p>USA Only</p>
+            </div>
+          </div>
+        </div>
+        <div class="job-card-details">
+          <span>Frontend</span>
+          <span>Senior</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+      </div>
+
+      <div class="job-card">
+        <div class="job-card-header">
+          <img class="job-card-header-img" src="./images/manage.svg" alt="manage">
+          <div class="job-card-header-details">
+            <div class="flex-row">
+              <p class="company-title">Manage</p>
+              <p class="new">new!</p>
+              <p class="featured">Featured</p>
+            </div>
+            <p class="job-title">Fullstack Developer</p>
+            <div class="flex-row light">
+              <p>1d ago</p>
+              <p>Part Time</p>
+              <p>Remote</p>
+            </div>
+          </div>
+        </div>
+        <div class="job-card-details">
+          <span>Fullstack</span>
+          <span>Midweight</span>
+          <span>Python</span>
+          <span>React</span>
+        </div>
+      </div>
+
+      <div class="job-card">
+        <div class="job-card-header">
+          <img class="job-card-header-img" src="./images/account.svg" alt="account">
+          <div class="job-card-header-details">
+            <div class="flex-row">
+              <p class="company-title">Account</p>
+              <p class="new">new!</p>
+            </div>
+            <p class="job-title"> Junior Frontend Developer</p>
+            <div class="flex-row light">
+              <p>2d ago</p>
+              <p>Part Time</p>
+              <p>USA Only</p>
+            </div>
+          </div>
+        </div>
+        <div class="job-card-details">
+          <span>Frontend</span>
+          <span>Junior</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Sass</span>
+        </div>
+      </div>
+
+      <div class="job-card">
+        <div class="job-card-header">
+          <img class="job-card-header-img" src="./images/myhome.svg" alt="myhome">
+          <div class="job-card-header-details">
+            <div class="flex-row">
+              <p class="company-title">MyHome</p>
+            </div>
+            <p class="job-title"> Junior Frontend Developer</p>
+            <div class="flex-row light">
+              <p>5d ago</p>
+              <p>Contract</p>
+              <p>USA Only</p>
+            </div>
+          </div>
+        </div>
+        <div class="job-card-details">
+          <span>Frontend</span>
+          <span>Junior</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+      </div>
+
+      <div class="job-card">
+        <div class="job-card-header">
+          <img class="job-card-header-img" src="./images/loop-studios.svg" alt="loop-studios">
+          <div class="job-card-header-details">
+            <div class="flex-row">
+              <p class="company-title">Loop Studios</p>
+            </div>
+            <p class="job-title">Software Engineer</p>
+            <div class="flex-row light">
+              <p>1w ago</p>
+              <p>Full Time</p>
+              <p>Worldwide</p>
+            </div>
+          </div>
+        </div>
+        <div class="job-card-details">
+          <span>Fullstack</span>
+          <span>Midweight</span>
+          <span>JavaScript</span>
+          <span>Ruby</span>
+          <span>Sass</span>
+        </div>
+      </div>
+
+      <div class="job-card">
+        <div class="job-card-header">
+          <img class="job-card-header-img" src="./images/faceit.svg" alt="faceit">
+          <div class="job-card-header-details">
+            <div class="flex-row">
+              <p class="company-title">Faceit</p>
+            </div>
+            <p class="job-title">Junior Backend Developer</p>
+            <div class="flex-row light">
+              <p>2w ago</p>
+              <p>Full Time</p>
+              <p>UK only</p>
+            </div>
+          </div>
+        </div>
+        <div class="job-card-details">
+          <span>Backend</span>
+          <span>Junior</span>
+          <span>JavaScript</span>
+          <span>Ruby</span>
+          <span>RoR</span>
+        </div>
+      </div>
+
+      <div class="job-card">
+        <div class="job-card-header">
+          <img class="job-card-header-img" src="./images/shortly.svg" alt="shortly">
+          <div class="job-card-header-details">
+            <div class="flex-row">
+              <p class="company-title">Shortly</p>
+            </div>
+            <p class="job-title">Junior Developer</p>
+            <div class="flex-row light">
+              <p>2w ago</p>
+              <p>Full Time</p>
+              <p>UK only</p>
+            </div>
+          </div>
+        </div>
+        <div class="job-card-details">
+          <span>Frontend</span>
+          <span>Junior</span>
+          <span>HTML</span>
+          <span>JavaScript</span>
+          <span>Sass</span>
+        </div>
+      </div>
+
+      <div class="job-card">
+        <div class="job-card-header">
+          <img class="job-card-header-img" src="./images/insure.svg" alt="insure">
+          <div class="job-card-header-details">
+            <div class="flex-row">
+              <p class="company-title">Insure</p>
+            </div>
+            <p class="job-title">
+              Junior Frontend Developer
+            </p>
+            <div class="flex-row light">
+              <p>2w ago</p>
+              <p>Full Time</p>
+              <p>USA only</p>
+            </div>
+          </div>
+        </div>
+        <div class="job-card-details">
+          <span>Frontend</span>
+          <span>Junior</span>
+          <span>JavaScript</span>
+          <span>Vue</span>
+          <span>Sass</span>
+        </div>
+      </div>
+
+      <div class="job-card">
+        <div class="job-card-header">
+          <img class="job-card-header-img" src="./images/eyecam-co.svg" alt="eyecam-co">
+          <div class="job-card-header-details">
+            <div class="flex-row">
+              <p class="company-title">Eyecam Co.</p>
+            </div>
+            <p class="job-title">
+              Full Stack Engineer
+            </p>
+            <div class="flex-row light">
+              <p>3w ago</p>
+              <p>Full Time</p>
+              <p>Worldwide</p>
+            </div>
+          </div>
+        </div>
+        <div class="job-card-details">
+          <span>Fullstack</span>
+          <span>Midweight</span>
+          <span>JavaScript</span>
+          <span>Python</span>
+          <span>Django</span>
+        </div>
+      </div>
+
+      <div class="job-card">
+        <div class="job-card-header">
+          <img class="job-card-header-img" src="./images/the-air-filter-company.svg" alt="the-air-filter-company">
+          <div class="job-card-header-details">
+            <div class="flex-row">
+              <p class="company-title">The Air Filter Company</p>
+            </div>
+            <p class="job-title">
+              Front-end Dev
+            </p>
+            <div class="flex-row light">
+              <p>1mo ago</p>
+              <p>Part Time</p>
+              <p>Worldwide</p>
+            </div>
+          </div>
+        </div>
+        <div class="job-card-details">
+          <span>Frontend</span>
+          <span>Junior</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Sass</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
