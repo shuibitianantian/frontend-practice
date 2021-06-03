@@ -1,0 +1,203 @@
+$color: (
+    desaturated-dark-cyan: hsl(180, 29%, 50%),
+    light-grayish-cyan: hsl(180, 31%, 95%),
+    dark-grayish-cyan: hsl(180, 8%, 52%),
+    very-dark-grayish-cyan: hsl(180, 14%, 20%)
+);
+
+@function color($color-name) {
+    @return map-get($map: $color, $key: $color-name);
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+main {
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1440px;
+    min-height: 100vh;
+    border: 1px solid black;
+    background-color: color(light-grayish-cyan);
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-image: url("./images/bg-header-desktop.svg");
+    background-color: color(desaturated-dark-cyan);
+    background-size: contain;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.center-div {
+    background-color: color(light-grayish-cyan);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin: 50px 100px;
+}
+
+.job-card {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 20px; 
+   width: calc(1440px - 200px);
+   background-color: white;
+   border-radius: 5px;
+}
+
+.job-card-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.job-card-header-img {
+    width: 90px;
+    height: 90px;
+}
+
+.job-card-header-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.company-title {
+    color: color(desaturated-dark-cyan);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.stamp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 5px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: white;
+}
+
+.new {
+    @extend .stamp;
+    background-color: color(desaturated-dark-cyan);
+}
+
+.featured {
+    @extend .stamp;
+    background-color: color(very-dark-grayish-cyan);
+}
+
+.job-title {
+    font-weight: 700;
+    margin: 5px 0px;
+    color: color(very-dark-grayish-cyan);
+    cursor: pointer;
+}
+
+.light {
+    color: color(dark-grayish-cyan);
+    font-size: 12px;
+}
+
+.job-card-details {
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+    color: color(desaturated-dark-cyan);
+    font-weight: 700;
+
+    span {
+        padding: 10px;
+        background-color: color(light-grayish-cyan);
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+            background-color: color(desaturated-dark-cyan);
+            color: white;
+        }
+    }
+}
+
+#filter-bar {
+    position: absolute;
+    top: 100px;
+    transform: translateY(-50%);
+    width: calc(1440px - 200px);
+    padding: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+
+    justify-content: space-between;
+    display: none;
+
+    button {
+        outline: none;
+        border: none;
+        color: color(desaturated-dark-cyan);
+        background-color: white;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+#filter-rules {
+    display: flex;
+    gap: 15px;
+}
+
+.rule-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    gap: 0px;
+
+    p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 15px;
+        padding: 5px;
+        font-size: 12px;
+        font-weight: 700;
+        color: color(desaturated-dark-cyan)
+    }
+
+    p:nth-child(1) {
+        background-color: color(light-grayish-cyan);
+    }
+
+    .close-btn {
+
+        color: white;
+        background-color: color(desaturated-dark-cyan);
+        width: 15px;
+        &:hover {
+            background-color: black;
+            cursor: pointer;
+        }
+    }
+}
