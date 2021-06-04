@@ -1,0 +1,332 @@
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.dark-mode {
+  color: white;
+  background-color: #202c37;
+}
+
+.dark-mode header {
+  background-color: #2b3945;
+}
+
+.dark-mode header button {
+  color: white;
+}
+
+.dark-mode input {
+  color: white;
+  background-color: #2b3945;
+}
+
+.dark-mode input::-webkit-input-placeholder {
+  color: white;
+}
+
+.dark-mode input:-ms-input-placeholder {
+  color: white;
+}
+
+.dark-mode input::-ms-input-placeholder {
+  color: white;
+}
+
+.dark-mode input::placeholder {
+  color: white;
+}
+
+.dark-mode .dropdown {
+  color: white;
+}
+
+.dark-mode .dropdown div {
+  background-color: #2b3945;
+}
+
+.dark-mode .country-info-card {
+  background-color: #2b3945;
+}
+
+.dark-mode #detail-page {
+  background-color: #202c37;
+}
+
+.dark-mode #back-btn {
+  background-color: #2b3945;
+}
+
+.light-mode {
+  color: #111517;
+  background-color: #fafafa;
+}
+
+.light-mode header {
+  background-color: white;
+}
+
+.light-mode section:nth-child(2) input {
+  color: #858585;
+}
+
+.light-mode .dropdown div {
+  background-color: white;
+}
+
+.light-mode .country-info-card {
+  background-color: white;
+}
+
+.light-mode #detail-page {
+  background-color: #fafafa;
+}
+
+main {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 1440px;
+  min-height: 95vh;
+  border: 1px solid red;
+}
+
+main header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 100px;
+  font-weight: 700;
+}
+
+main header button {
+  border: none;
+  background: none;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+}
+
+main header button:hover {
+  cursor: pointer;
+}
+
+main section:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 100px;
+  margin: 40px 0px;
+}
+
+main section:nth-child(2) input {
+  height: 40px;
+  width: 400px;
+  padding-left: 40px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown {
+  z-index: 1;
+  height: 40px;
+  font-weight: 600;
+  color: #111517;
+  width: 150px;
+  cursor: pointer;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.dropdown div {
+  margin-bottom: 10px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+}
+
+.dropdown div p {
+  margin: 5px 0px;
+}
+
+.dropdown div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown div:nth-child(1) p {
+  margin: 0px;
+}
+
+.dropdown div:nth-child(1) p:nth-child(2) {
+  margin-top: 5px;
+  -webkit-transform: rotate(90deg) translateX(-50%);
+          transform: rotate(90deg) translateX(-50%);
+}
+
+.dropdown div:nth-child(2) {
+  display: none;
+  font-size: 12px;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+#home-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0px 100px;
+}
+
+#detail-page {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  font-weight: 600;
+  width: 1440px;
+  height: 90vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#detail-page #back-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  width: 80px;
+  height: 30px;
+  margin-left: 100px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.country-detail {
+  position: relative;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.country-detail span {
+  font-weight: 800;
+}
+
+.country-detail img {
+  width: 600px;
+}
+
+.country-detail > div {
+  padding-left: 50px;
+  padding-right: 100px;
+}
+
+.country-detail > div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1000px;
+}
+
+.country-detail > div:nth-child(2) > div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.country-detail > div:nth-child(2) div {
+  width: 800px;
+}
+
+.country-info-card {
+  width: 250px;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px 5px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+}
+
+.country-info-card img {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.country-info-card h3 {
+  padding-left: 20px;
+}
+
+.country-info-card p {
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+.country-info-card p span {
+  font-weight: 600;
+}
+/*# sourceMappingURL=index.css.map */
