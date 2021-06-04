@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <title>Countries</title>
+</head>
+
+<body>
+    <main id="container">
+        <header>
+            <h3>Where is the world?</h3>
+            <button id="mode-switcher">Dark Mode</button>
+        </header>
+        <section>
+            <form id="country-search">
+                <input placeholder="Search for a country...">
+            </form>
+            <!-- <select name="region-filter" id="region-filter">
+                <option value="africa">Africa</option>
+                <option value="america">America</option>
+                <option value="asia">Asia</option>
+                <option value="europe">Europe</option>
+                <option value="oceania">Oceania</option>
+            </select> -->
+            <div class="dropdown" id="filter-panel">
+                <div>
+                    <p>Filter by Region</p>
+                    <p>></p>
+                </div>
+                <div>
+                    <p>Africa</p>
+                    <p>America</p>
+                    <p>Asia</p>
+                    <p>Europe</p>
+                    <p>Oceania</p>
+                </div>
+            </div>
+        </section>
+        <div id="home-page"></div>
+        <div id="detail-page">
+            <p id="back-btn">Back</p>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
